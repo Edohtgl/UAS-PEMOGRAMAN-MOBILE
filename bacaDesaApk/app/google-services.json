@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "529177282725",
+    "project_id": "bacadesa-8081d",
+    "storage_bucket": "bacadesa-8081d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529177282725:android:787e4ddec522537b85654c",
+        "android_client_info": {
+          "package_name": "com.aplikasi.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfxHlkSNE1NWyyxbCZfqdu_igg2Oxsdd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

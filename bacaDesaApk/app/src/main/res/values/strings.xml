@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Desa Baca</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Readlist</string>
+    <string name="title_notifications">Downloads</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

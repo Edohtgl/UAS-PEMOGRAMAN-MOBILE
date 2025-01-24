@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.HomeFragment">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/linearLayoutCompat"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <LinearLayout
+          android:id="@+id/terbaru"
+          android:layout_width="match_parent"
+          android:layout_height="350dp"
+          android:orientation="vertical">
+
+         <ImageView
+             android:id="@+id/gambarterbaru"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:scaleType="centerCrop"
+             android:src="@drawable/terbaru" />
+
+         <androidx.appcompat.widget.LinearLayoutCompat
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="-100dp"
+             android:gravity="center_horizontal"
+             android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bacaNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tombol_backgroundputih"
+                android:padding="15dp"
+                android:text="Baca Sekarang"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_download"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+         </androidx.appcompat.widget.LinearLayoutCompat>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <androidx.appcompat.widget.LinearLayoutCompat
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="15dp"
+             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rekomendasi"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+            <!-- Ganti HorizontalScrollView dengan RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewRekomendasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="10dp"/>
+         </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+      </LinearLayout>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:gravity="end"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <ImageButton
+          android:id="@+id/profil"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:scaleType="fitCenter"
+          android:background="#00000000"
+          android:src="@drawable/ic_person" />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
